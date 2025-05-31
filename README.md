@@ -2,7 +2,6 @@
 
 <h2>Properties for the Parent(flex container)</h2>
 
-<h5>
 .container {<br>
   display: flex; | inline-flex (for full width) <br>
   
@@ -17,16 +16,17 @@
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; <br>
   
   align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe; <br>
+
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
 }
-</h5>
+
 
 <h2>Properties for the Children (flex items)</h2>
-<h5>
-.item { <br>
-  order: 5; /* default is 0 */ (ordering blocks) <br>
+
+.item {
+  order: 5; /* default is 0 */ <br>
   
   flex-basis: 100px  | auto; /* default auto */ (Use for block weeight or height) <br>
   
-  align-self: auto | flex-start | flex-end | center | baseline | stretch; (For single block movement) <br>
+  align-self: auto | flex-start | flex-end | center | baseline | stretch; (For single block movement)
 }
-</h5>
